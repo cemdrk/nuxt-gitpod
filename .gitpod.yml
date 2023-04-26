@@ -4,9 +4,7 @@ tasks:
       pushd myapp 
       npm install
 
-    command: |
-      export NUXT_TELEMETRY_DISABLED=1
-      npm run dev
+    command: npm run dev
 
 ports:
  - port: 3000
