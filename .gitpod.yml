@@ -1,6 +1,11 @@
 
+tasks:
+  - init: pushd myapp && npm install
+    command: |
+      npm run dev
+
 ports:
-  - port: 3000
-    onOpen: open-browser
-  - port: 24678
-    onOpen: ignore
+ - port: 3000
+   onOpen: open-browser
+ - port: 24678
+   onOpen: ignore
