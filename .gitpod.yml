@@ -1,7 +1,11 @@
 
 tasks:
-  - init: pushd myapp && npm install
+  - init: |
+      pushd myapp 
+      npm install
+
     command: |
+      export NUXT_TELEMETRY_DISABLED=1
       npm run dev
 
 ports:
